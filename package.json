@@ -1,6 +1,6 @@
 {
   "name": "face-detect",
-  "homepage": "https://github.com/asemfarhan/Face-Detect.git",
+  "homepage": "https://asemfarhan.github.io/Face-Detect/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
