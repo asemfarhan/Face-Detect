@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/asemfarhan/Face-Detect.git/static/css/main.5e296739.chunk.css",
-    "main.js": "/asemfarhan/Face-Detect.git/static/js/main.e2e4449a.chunk.js",
-    "main.js.map": "/asemfarhan/Face-Detect.git/static/js/main.e2e4449a.chunk.js.map",
-    "runtime-main.js": "/asemfarhan/Face-Detect.git/static/js/runtime-main.24c462e0.js",
-    "runtime-main.js.map": "/asemfarhan/Face-Detect.git/static/js/runtime-main.24c462e0.js.map",
-    "static/css/2.eb45ad44.chunk.css": "/asemfarhan/Face-Detect.git/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.d0e019f7.chunk.js": "/asemfarhan/Face-Detect.git/static/js/2.d0e019f7.chunk.js",
-    "static/js/2.d0e019f7.chunk.js.map": "/asemfarhan/Face-Detect.git/static/js/2.d0e019f7.chunk.js.map",
-    "index.html": "/asemfarhan/Face-Detect.git/index.html",
-    "precache-manifest.889118d8c08a5072e7f6be16f7ede81e.js": "/asemfarhan/Face-Detect.git/precache-manifest.889118d8c08a5072e7f6be16f7ede81e.js",
-    "service-worker.js": "/asemfarhan/Face-Detect.git/service-worker.js",
-    "static/css/2.eb45ad44.chunk.css.map": "/asemfarhan/Face-Detect.git/static/css/2.eb45ad44.chunk.css.map",
-    "static/css/main.5e296739.chunk.css.map": "/asemfarhan/Face-Detect.git/static/css/main.5e296739.chunk.css.map",
-    "static/media/logo.png": "/asemfarhan/Face-Detect.git/static/media/logo.da203b46.png"
+    "main.css": "/Face-Detect/static/css/main.5e296739.chunk.css",
+    "main.js": "/Face-Detect/static/js/main.ee4a5811.chunk.js",
+    "main.js.map": "/Face-Detect/static/js/main.ee4a5811.chunk.js.map",
+    "runtime-main.js": "/Face-Detect/static/js/runtime-main.88897936.js",
+    "runtime-main.js.map": "/Face-Detect/static/js/runtime-main.88897936.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/Face-Detect/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.f6f7aaec.chunk.js": "/Face-Detect/static/js/2.f6f7aaec.chunk.js",
+    "static/js/2.f6f7aaec.chunk.js.map": "/Face-Detect/static/js/2.f6f7aaec.chunk.js.map",
+    "index.html": "/Face-Detect/index.html",
+    "precache-manifest.75a347c61dc0ed48a023fe640db941d4.js": "/Face-Detect/precache-manifest.75a347c61dc0ed48a023fe640db941d4.js",
+    "service-worker.js": "/Face-Detect/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/Face-Detect/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.5e296739.chunk.css.map": "/Face-Detect/static/css/main.5e296739.chunk.css.map",
+    "static/media/logo.png": "/Face-Detect/static/media/logo.da203b46.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.24c462e0.js",
+    "static/js/runtime-main.88897936.js",
     "static/css/2.eb45ad44.chunk.css",
-    "static/js/2.d0e019f7.chunk.js",
+    "static/js/2.f6f7aaec.chunk.js",
     "static/css/main.5e296739.chunk.css",
-    "static/js/main.e2e4449a.chunk.js"
+    "static/js/main.ee4a5811.chunk.js"
   ]
 }
