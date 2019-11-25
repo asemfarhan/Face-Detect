@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ecacdab0de2765e9c9eaea55ab3da44",
+    "revision": "b4d5829994ca95aac70ab7b4503a17ce",
     "url": "/asemfarhan/Face-Detect.git/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asemfarhan/Face-Detect.git/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "e37b3bbc8ed0cf0d1bc4",
+    "revision": "e3c12f7c7d4a143729b4",
     "url": "/asemfarhan/Face-Detect.git/static/css/main.5e296739.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asemfarhan/Face-Detect.git/static/js/2.d0e019f7.chunk.js"
   },
   {
-    "revision": "e37b3bbc8ed0cf0d1bc4",
-    "url": "/asemfarhan/Face-Detect.git/static/js/main.2ef81e75.chunk.js"
+    "revision": "e3c12f7c7d4a143729b4",
+    "url": "/asemfarhan/Face-Detect.git/static/js/main.e2e4449a.chunk.js"
   },
   {
     "revision": "865883aff232ef9a4938",
