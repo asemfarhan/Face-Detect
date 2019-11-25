@@ -1,0 +1,19 @@
+.bounding{
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
