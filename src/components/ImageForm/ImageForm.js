@@ -3,10 +3,13 @@ import React from 'react';
 const ImageForm = ( {onClickDetect_ImageForm , onChangeInputText_ImageForm} ) =>{
     return(
         <div>
-            <div  className='db center'>
-                <div><p className=' b pv2 tracked tc white '> 
-                    {'Hellow to face detect website.'}
-                </p></div>
+            <div  className=' center' style={{display :'block'}}>
+                <div>
+                    <p className=' b pv2 tracked tc white '> 
+                    {'Hello to face detect website.'}
+                    </p>
+                </div>
+
                 <div className='flex center '>
                     <input placeholder='http:\\...'
                         className='input-reset br2 mv1 b--black-20 pa2 mb2 db w-50 tc' 
