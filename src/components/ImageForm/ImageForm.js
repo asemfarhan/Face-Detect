@@ -1,15 +1,14 @@
 import React from 'react';
   
-const ImageForm = ( {onClickDetect_ImageForm , onChangeInputText_ImageForm} ) =>{
+const ImageForm = ( {onClickDetect_ImageForm , onChangeInputText_ImageForm , user} ) =>{
     return(
         <div>
             <div  className=' center' style={{display :'block'}}>
                 <div>
-                    <p className=' b pv2 tracked tc white '> 
-                    {'Hello to face detect website.'}
+                    <p className=' pv2 tracked tc white '> 
+    {'Hello '} <b>{user.name}</b>{' to face detect website - Enteries #  :  '} <b>{ user.enteries}</b>
                     </p>
                 </div>
-
                 <div className='flex center '>
                     <input placeholder='http:\\...'
                         className='input-reset br2 mv1 b--black-20 pa2 mb2 db w-50 tc' 
