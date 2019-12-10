@@ -16,7 +16,6 @@ onChangeName = (event) =>
     console.log(event.target.value);
     this.setState({nameField : event.target.value});
 }
-
     
 onChangeEmail = (event) =>
 {   
@@ -31,8 +30,7 @@ onChangePassword=(event)=>
 }
 
 onSubmitRegister= () => {
-    console.log('----------------- start register  ');
-
+    //console.log('----------------- start register  ');
     fetch('https://mysterious-eyrie-08602.herokuapp.com/register', {
     method:'post',
     headers : {'Content-Type': 'application/json'},
@@ -45,8 +43,7 @@ onSubmitRegister= () => {
     .then(res  => res.json())
     .then(user => {
         if(user[0].id)
-        {        
-            this.props.onChangeRoute('home', true); 
+        {   this.props.onChangeRoute('home', true); 
             this.props.onLoadUser(user);
         }
         else{ 
@@ -56,7 +53,7 @@ onSubmitRegister= () => {
     })
     .catch(err=>{ 
         this.props= ({isSingedIn:false})
-        console.log('err catac',err)
+        //console.log('err catac',err)
     })
 }
 
@@ -101,6 +98,5 @@ onSubmitRegister= () => {
             )
     }
 }
-
 
 export default Register;

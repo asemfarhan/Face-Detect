@@ -11,7 +11,6 @@ import FaceDe from './components/Face/Face';
 import Clarifai from 'clarifai';
 
 const appClarifai = new Clarifai.App({ apiKey: '616e6781b3e543b7b0e2a98f8b7e25c2'});
- 
 
 class  App extends React.Component { 
 constructor(){
@@ -32,7 +31,7 @@ constructor(){
     }}
           
   calculateFaceLocation= (data)=>{
-      console.log('response', data.outputs[0].data.regions[0].region_info.bounding_box);
+    //  console.log('response', data.outputs[0].data.regions[0].region_info.bounding_box);
       const clar  = data.outputs[0].data.regions[0].region_info.bounding_box;
       const image = document.getElementById('inputImage')
       const width = Number(image.width);
@@ -59,7 +58,6 @@ onClickDetect = () => {
    this.setState({imageUrl : this.state.inputText});
    else 
    this.setState({inputText : this.state.imageUrl});
-
     appClarifai.models
     .predict(
       Clarifai.FACE_DETECT_MODEL,
@@ -79,52 +77,29 @@ onClickDetect = () => {
         }
       })
     .catch(err => {
-    console.log('err',err); });
+        console.log('err',err); });
 }
 
 onChangeRoute = (routeP) => {
-  // console.log('isSingedIn----------before--------',this.state.isSingedIn);
-  // console.log('  onChangeRoute >> routeP : -------------- ',routeP);
-  // console.log('setState  befor : -------------- ',this.state);
   this.setState({route: routeP});
 
   if( routeP === 'home')
     this.setState({route: routeP, isSingedIn : true})
-    
-    else if( routeP === 'signout'){
-      console.log('signout  -----------------');
-
-      const init= {
+  else if( routeP === 'signout'){
+    const init= {
         inputText : '' ,
         imageUrl : '',
         faceBox :{} ,
         route : 'signin',
         isSingedIn : false,
-        user : {id:'' , 
-              name:'',
-              email:'',
-              password:'',
-              enteries:'' ,
-              joined: ''
-              }
+        user :  {id:'' ,   name:'',  email:'',  password:'', enteries:'' , joined: '' }
       };
-      this.setState(init);
+    this.setState(init);
     }
-      // console.log('signin  onChangeRoute : -------------- ',routeP);
-  console.log('setState  after : -------------- ',this.state);
-      // console.log('isSingedIn After this.state.isSingedIn : -------------- ',this.state.isSingedIn);
-
  }
 
 onLoadUser = (user_props) => {
-  // console.log('user',this.state.user);
-
   this.setState({user: user_props[0]});
-  // console.log('user',this.state.user);
-  // console.log('user_props',user_props);
-
-  // console.log(' this.state.isSignIn'+this.state.isSingedIn);
-  // console.log('onLoadUser :-'+  this.state.user +' this.state.isSignIn'+this.state.isSingedIn);
 }
 
 render(){
@@ -135,14 +110,11 @@ render(){
       { (this.state.route === 'home' && isSingedIn)?
           <div>
             <Logo />
-
             <ImageForm 
                 onClickDetect_ImageForm     = {this.onClickDetect}
                 onChangeInputText_ImageForm = {this.onChangeInputText}
                 user ={this.state.user} />
-
             <FaceDe image={this.state.imageUrl} faceBox={this.state.faceBox} />
- 
           </div>
         :   (this.state.route === 'signin'?
               <Login  isSingedIn={isSingedIn} onChangeRoute = {this.onChangeRoute}  onLoadUser={this.onLoadUser} /> 
