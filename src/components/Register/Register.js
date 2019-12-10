@@ -13,19 +13,19 @@ class Register extends React.Component{
     
 onChangeName = (event) =>
 {   
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.setState({nameField : event.target.value});
 }
     
 onChangeEmail = (event) =>
 {   
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.setState({emailField : event.target.value});
 }
 
 onChangePassword=(event)=>
 {   
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.setState({passwordField : event.target.value});
 }
 

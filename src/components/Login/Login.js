@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class Login extends React.Component {
 
 constructor(props){
@@ -13,13 +12,13 @@ constructor(props){
 
 onChangeEmail = (event) =>
 {   
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.setState({emailField : event.target.value});
 }
 
 onChangePassword=(event)=>
 {   
-    console.log(event.target.value);
+    //console.log(event.target.value);
     this.setState({passwordField : event.target.value});
 }
  
@@ -35,26 +34,19 @@ onSubmitLogin= () => {
     })
     .then(res=> res.json())
     .then(data => {
-        console.log('-----------------then data  ',data);
-        console.log('-----------------then isArray  ',Array.isArray(data));
-
         if(Array.isArray(data))
         {
         this.props.onChangeRoute('home', true); 
-            this.props.onLoadUser(data);
-            console.log('data.lenght data.lenght')
-            console.log('-----------------if ');
+        this.props.onLoadUser(data);
         this.props= ({isSingedIn:true})
         }
         else{ 
            this.props= ({isSingedIn:false});
-            console.log('else ----',this.props.isSingedIn)
         }
-
     })
     .catch(err=>{ 
         this.props= ({isSingedIn:false})
-        console.log('err catac',err)
+        //console.log('err catac',err)
     })
 }
 
