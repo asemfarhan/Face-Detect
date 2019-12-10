@@ -40,7 +40,7 @@ onSubmitRegister= () => {
     name        : this.state.nameField,
     email       : this.state.emailField,
     password    : this.state.passwordField
-        })
+        }) 
     })
     .then(res  => res.json())
     .then(user => {

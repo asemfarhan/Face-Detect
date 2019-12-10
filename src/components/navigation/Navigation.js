@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Navigation extends React.Component {
-
+ 
 render(){
     const {onChangeRoute,  isSingedIn}= this.props;
     if(isSingedIn){

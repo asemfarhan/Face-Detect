@@ -142,7 +142,7 @@ render(){
                 user ={this.state.user} />
 
             <FaceDe image={this.state.imageUrl} faceBox={this.state.faceBox} />
-
+ 
           </div>
         :   (this.state.route === 'signin'?
               <Login  isSingedIn={isSingedIn} onChangeRoute = {this.onChangeRoute}  onLoadUser={this.onLoadUser} /> 

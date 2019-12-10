@@ -1,6 +1,6 @@
 import React from 'react';
 import './bounding.css';
-  
+   
 const Face = ({image , faceBox}) =>{
     return(
         <div className='center'>

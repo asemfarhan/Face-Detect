@@ -1,7 +1,7 @@
 import React from 'react';
   
 const ImageForm = ( {onClickDetect_ImageForm , onChangeInputText_ImageForm , user} ) =>{
-    return(
+    return( 
         <div>
             <div  className=' center' style={{display :'block'}}>
                 <div>
